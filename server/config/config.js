@@ -24,7 +24,7 @@ process.env.NODE_ENV = process.NODE_ENV || 'dev';
 let urlDB
 console.log(process.env.NODE_ENV)
 
-if ( process.env.NODE_ENV === 'undefined' ) {
+if ( process.env.NODE_ENV === undefined ) {
     urlDB = 'mongodb+srv://maximiliano90:Maximiliano90@cluster0-l0oit.mongodb.net/cafe?retryWrites=true&w=majority';
     
 }else {
