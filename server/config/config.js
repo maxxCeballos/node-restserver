@@ -24,10 +24,13 @@ process.env.NODE_ENV = process.NODE_ENV || 'dev';
 let urlDB
 console.log(process.env.NODE_ENV)
 
-if ( process.env.NODE_ENV === 'dev' ) {
-    urlDB = 'mongodb://localhost:27017/cafe';
-}else {
+if ( process.env.NODE_ENV === 'production' ) {
     urlDB = 'mongodb+srv://maximiliano90:Maximiliano90@cluster0-l0oit.mongodb.net/cafe?retryWrites=true&w=majority';
+    
+}else {
+    
+    urlDB = 'mongodb://localhost:27017/cafe';
+
 }
 
 // URLDB es un nombre elegido por ustedes, puede ser cualquiera
