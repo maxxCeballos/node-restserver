@@ -17,8 +17,8 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
 
-// para poder rutear las distintas peticiones de usuario
-app.use( require('./routes/usuario'))
+// para poder rutear las distintas peticiones
+app.use( require('./routes/index'))
 
 
 // 'mongodb://localhost:27017/cafe' fue reemplezado por process.env.URLDB del config.js
