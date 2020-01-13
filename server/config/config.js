@@ -38,12 +38,12 @@ process.env.SEED = process.env.SEED || 'este-es-el-seed-desarrollo'
 let urlDB
 
 
- if ( process.env.NODE_ENV === 'dev' ) {
-     urlDB = 'mongodb://localhost:27017/cafe';
- }else {
+//if ( process.env.NODE_ENV === 'dev' ) {
+//     urlDB = 'mongodb://localhost:27017/cafe';
+// }else {
     // variable de entorno configurada en heroku
     urlDB = process.env.MONGO_URI
-}
+//}
 
 // URLDB es un nombre elegido por ustedes, puede ser cualquiera
 process.env.URLDB = urlDB;
