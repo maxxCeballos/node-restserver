@@ -27,12 +27,12 @@ app.use( require('./routes/index'))
 
 // 'mongodb://localhost:27017/cafe' fue reemplezado por process.env.URLDB del config.js
 mongoose.connect(process.env.URLDB, 
-                { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true },
-                (err, res) => {
+        { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true },
+        (err, res) => {
 
-    if ( err ) throw err;
+            if ( err ) throw err;
 
-    console.log('base de datos online')
+            console.log('base de datos online')
 });
  
  
